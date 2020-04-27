@@ -48,4 +48,17 @@ export class DataService {
         }
       );
   }
+
+  // Labels
+  public getLabels(): void {
+    this.httpClient.get('http://localhost:3000/labels')
+      .subscribe(
+        res => {
+          console.log(res);
+        },
+        error => {
+          console.log(error);
+        }
+      );
+  }
 }
