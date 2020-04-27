@@ -58,7 +58,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors'); //Module servant à gérer l'accès à notre API
 let corsOptions = {
-    origin: "http://localhost:4200" //ou origin: “*” pour que toute les requêtes soient acceptées
+    origin: "*"
 }
 app.use(cors(corsOptions));
 
